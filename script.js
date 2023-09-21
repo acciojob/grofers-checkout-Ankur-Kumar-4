@@ -29,10 +29,14 @@ const getSum = () => {
     }
 
     const newRow = document.createElement("tr");
-    newRow.innerHTML = `<td>Total Price: Rs ${totalPrice}</td>`;
+    newRow.innerHTML = `<td>Total Price:</td>
+	<td>${totalPrice}</td>`;
     
     // Append the new row to the existing table
     table.appendChild(newRow);
 };
 
 getSumBtn.addEventListener("click", getSum);
+
+
+
